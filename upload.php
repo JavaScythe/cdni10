@@ -18,7 +18,7 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
     $newFileName = md5(time() . $fileName) . '.' . $fileExtension;
 
     // check if file has one of the following extensions
-    $allowedfileExtensions = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc', 'csv', 'exe', 'deb', 'json', 'file', 'sb2', 'sb3', 'sprite');
+    $allowedfileExtensions = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc', 'csv', 'exe', 'deb', 'json', 'file', 'sb2', 'sb3', 'sprite', 'html', 'css');
 
     if (in_array($fileExtension, $allowedfileExtensions))
     {
