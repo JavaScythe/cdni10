@@ -46,5 +46,5 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
     $message .= 'Error:' . $_FILES['uploadedFile']['error'];
   }
 }
-$_SESSION['message'] = $message.' <a href="https://cdni10.herokuapp.com/uploaded_files/'.$newFileName."\" target=\"_blank\">View File</a>";
+$_SESSION['message'] = '<p style="display:none;" id="newDataUrl">https://cdni10.herokuapp.com/uploaded_files/'.$newFileName.'</p>';
 header("Location: index.php");
