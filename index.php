@@ -10,7 +10,7 @@ session_start();
   <?php
     if (isset($_SESSION['message']) && $_SESSION['message'])
     {
-      printf('<b>%s</b>', $_SESSION['message']);
+      printf($_SESSION['message']);
       unset($_SESSION['message']);
     } else {
   ?>
