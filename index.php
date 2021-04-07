@@ -12,7 +12,7 @@ session_start();
     {
       printf('<b>%s</b>', $_SESSION['message']);
       unset($_SESSION['message']);
-    }
+    } else {
   ?>
   <form method="POST" action="upload.php" enctype="multipart/form-data">
     <div>
@@ -22,5 +22,8 @@ session_start();
 
     <input type="submit" name="uploadBtn" value="Upload" />
   </form>
+  <?php
+    }
+   ?>
 </body>
 </html>
